@@ -10,10 +10,11 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
 - [jupyter-widget-react-cookiecutter](https://github.com/Waidhoferj/jupyter-widget-react-cookiecutter) template by John Waidhofer.
 - [react-colorful](https://www.npmjs.com/package/react-colorful) package.
 - [widget-cookiecutter](https://github.com/jupyter-widgets/widget-cookiecutter) template.
+- [How To Add Custom Build Steps and Commands To setup.py](https://jichu4n.com/posts/how-to-add-custom-build-steps-and-commands-to-setuppy/) blog post by Chuan Ji.
 
 ## Development
 
-- `mamba create -n ipycolorful-dev -c conda-forge jupyterlab jupyter-packaging nodejs yarn python`.
+- `mamba env create -f environment.yml` or `mamba create -n ipycolorful-dev -c conda-forge jupyterlab jupyter-packaging nodejs yarn python`.
 - `conda activate ipycolorful-dev`.
 - `jupyter lab`.
 
@@ -23,4 +24,10 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
   - `mamba --version`.
   - [Documentation](https://mamba.readthedocs.io/en/latest/).
   - `conda` should be used for activation and deactivation.
+  - [Reimplement: mamba env create -f env.yml](https://github.com/mamba-org/mamba/issues/633) (open) issue.
+  - `mamba env remove -n ipycolorful-dev` ([source](https://www.imranabdullah.com/2021-08-21/Conda-and-Mamba-Commands-for-Managing-Virtual-Environments)).
 - [conda-forge](https://anaconda.org/conda-forge).
+- [conda-lock](https://github.com/conda-incubator/conda-lock).
+- [ipycanvas](https://github.com/martinRenou/ipycanvas).
+- [bqplot](https://github.com/bqplot/bqplot).
+- [babel-loader](https://webpack.js.org/loaders/babel-loader/).
