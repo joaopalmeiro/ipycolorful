@@ -24,6 +24,7 @@
     "@babel/core": "7.14.6",
     "@babel/preset-env": "7.14.7",
     "@babel/preset-react": "7.14.5",
+    "@jupyterlab/builder": "3.3.0",
     "babel-loader": "8.2.2",
     "webpack": "5.46.0",
     "webpack-cli": "4.7.2"
@@ -33,5 +34,15 @@
       "@babel/preset-env",
       "@babel/preset-react"
     ]
+  },
+  "jupyterlab": {
+    "extension": "lib/plugin",
+    "outputDir": "ipycolorful/labextension/",
+    "sharedPackages": {
+      "@jupyter-widgets/base": {
+        "bundled": false,
+        "singleton": true
+      }
+    }
   }
 }
