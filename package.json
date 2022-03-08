@@ -28,6 +28,7 @@
     "@jupyterlab/builder": "3.3.0",
     "babel-loader": "8.2.2",
     "rimraf": "3.0.2",
+    "typescript": "4.3.5",
     "webpack": "5.46.0",
     "webpack-cli": "4.7.2"
   },
@@ -48,9 +49,10 @@
     }
   },
   "scripts": {
-    "build": "yarn run build:nbextension && yarn run build:labextension",
+    "build": "yarn run build:lib && yarn run build:nbextension && yarn run build:labextension",
     "build:labextension": "jupyter labextension build .",
     "build:nbextension": "webpack",
+    "build:lib": "tsc",
     "clean": "rimraf lib/ && rimraf dist/ && rimraf ipycolorful/labextension/ && rimraf ipycolorful/nbextension/index.*"
   },
   "files": [
