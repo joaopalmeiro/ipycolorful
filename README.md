@@ -23,7 +23,8 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
 - Jupyter Notebook/classic notebook ([source](https://github.com/jupyter-widgets/widget-ts-cookiecutter)):
   - `jupyter nbextension install --sys-prefix --symlink --overwrite --py ipycolorful`.
   - `jupyter nbextension enable --sys-prefix --py ipycolorful`.
-- `jupyter lab`.
+- `yarn run clean` + `yarn run build`.
+- `jupyter lab` or `jupyter notebook`.
 
 ## Notes
 

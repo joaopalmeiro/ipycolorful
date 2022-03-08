@@ -44,6 +44,7 @@ export class ColorfulView extends DOMWidgetView {
     const component = React.createElement(ReactWidget, {
       model: this.model,
     });
+
     ReactDOM.render(component, this.el);
   }
 }
