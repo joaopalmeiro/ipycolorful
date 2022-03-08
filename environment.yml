@@ -5,8 +5,8 @@ dependencies:
   - python=3.7.12
   - jupyterlab=3.2.5
   - jupyter-packaging=0.11.1
-  # https://anaconda.org/conda-forge/nodejs?version=16.13.2
-  - nodejs=16.13.2
+  # https://anaconda.org/conda-forge/nodejs?version=14.18.3
+  - nodejs=14.18.3
   - yarn=1.22.17
   # https://anaconda.org/conda-forge/black-jupyter
   - black-jupyter=22.1.0

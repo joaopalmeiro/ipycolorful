@@ -5,10 +5,16 @@ const version = require("./package.json").version;
 // - https://webpack.js.org/configuration/configuration-types/#exporting-multiple-configurations
 // - https://webpack.js.org/guides/public-path/#on-the-fly
 // - https://github.com/bqplot/bqplot/blob/master/js/webpack.config.js
+// - https://webpack.js.org/configuration/resolve/#resolveextensions
+// - https://github.com/bqplot/bqplot/blob/master/js/webpack.lab.config.js
 
 const rules = [{ test: /\.jsx$/, loader: "babel-loader" }];
 
 const externals = ["@jupyter-widgets/base"];
+
+const resolve = {
+  extensions: [".jsx", "..."],
+};
 
 module.exports = [
   {
@@ -20,6 +26,7 @@ module.exports = [
       publicPath: "",
     },
     devtool: false,
+    mode: "production",
   },
 
   {
@@ -35,6 +42,8 @@ module.exports = [
       rules: rules,
     },
     externals,
+    resolve,
+    mode: "production",
   },
 
   {
@@ -50,5 +59,7 @@ module.exports = [
       rules: rules,
     },
     externals,
+    resolve,
+    mode: "production",
   },
 ];

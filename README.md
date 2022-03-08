@@ -16,7 +16,11 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
 
 - `mamba env create -f environment.yml` or `mamba create -n ipycolorful-dev -c conda-forge jupyterlab jupyter-packaging nodejs yarn python`.
 - `conda activate ipycolorful-dev`.
-- `pip install -e .`.
+- `pip install -e .` + `conda list`.
+- JupyterLab ([source](https://github.com/jupyter-widgets/widget-cookiecutter#local-dev-installation-for-jupyterlab)): `jupyter labextension develop ipycolorful --overwrite`.
+- Jupyter Notebook/classic notebook ([source](https://github.com/jupyter-widgets/widget-cookiecutter#local-dev-installation-for-classic-notebook)):
+  - `jupyter nbextension install --py --symlink --sys-prefix ipycolorful`.
+  - `jupyter nbextension enable --py --sys-prefix ipycolorful`.
 - `jupyter lab`.
 
 ## Notes
@@ -33,3 +37,4 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
 - [bqplot](https://github.com/bqplot/bqplot).
 - [babel-loader](https://webpack.js.org/loaders/babel-loader/).
 - [`.yarnrc` file](https://classic.yarnpkg.com/en/docs/yarnrc/).
+- [Node.js releases](https://nodejs.org/en/about/releases/).

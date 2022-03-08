@@ -7,3 +7,5 @@ function ReactWidget(props) {
     </div>
   );
 }
+
+export default ReactWidget;
