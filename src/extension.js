@@ -1,18 +1,11 @@
 // Source:
 // - https://github.com/bqplot/bqplot/blob/master/js/src/extension.ts
+// - https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#non-null-assertion-operator
+// - https://github.com/jupyter-widgets/widget-ts-cookiecutter/blob/master/%7B%7Bcookiecutter.github_project_name%7D%7D/src/extension.ts
+// - https://github.com/jupyter-widgets/widget-cookiecutter/blob/master/%7B%7Bcookiecutter.github_project_name%7D%7D/js/lib/extension.js
 
-__webpack_public_path__ =
+window.__webpack_public_path__ =
   document.querySelector("body").getAttribute("data-base-url") +
   "nbextensions/ipycolorful";
 
-if (window.require) {
-  window.require.config({
-    map: {
-      "*": {
-        ipycolorful: "nbextensions/ipycolorful/index",
-      },
-    },
-  });
-}
-
-export function load_ipython_extension() {}
+export * from "./index";

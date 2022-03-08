@@ -11,16 +11,17 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
 - [react-colorful](https://www.npmjs.com/package/react-colorful) package.
 - [widget-cookiecutter](https://github.com/jupyter-widgets/widget-cookiecutter) template.
 - [How To Add Custom Build Steps and Commands To setup.py](https://jichu4n.com/posts/how-to-add-custom-build-steps-and-commands-to-setuppy/) blog post by Chuan Ji.
+- [Creating Reactive Jupyter Widgets With Svelte](https://cabreraalex.medium.com/creating-reactive-jupyter-widgets-with-svelte-ef2fb580c05) blog post and [widget-svelte-cookiecutter](https://github.com/cabreraalex/widget-svelte-cookiecutter) template by Alex Cabrera.
 
 ## Development
 
 - `mamba env create -f environment.yml` or `mamba create -n ipycolorful-dev -c conda-forge jupyterlab jupyter-packaging nodejs yarn python`.
 - `conda activate ipycolorful-dev`.
 - `pip install -e .` + `conda list`.
-- JupyterLab ([source](https://github.com/jupyter-widgets/widget-cookiecutter#local-dev-installation-for-jupyterlab)): `jupyter labextension develop ipycolorful --overwrite`.
-- Jupyter Notebook/classic notebook ([source](https://github.com/jupyter-widgets/widget-cookiecutter#local-dev-installation-for-classic-notebook)):
-  - `jupyter nbextension install --py --symlink --sys-prefix ipycolorful`.
-  - `jupyter nbextension enable --py --sys-prefix ipycolorful`.
+- JupyterLab ([source](https://github.com/jupyter-widgets/widget-ts-cookiecutter)): `jupyter labextension develop --overwrite .`.
+- Jupyter Notebook/classic notebook ([source](https://github.com/jupyter-widgets/widget-ts-cookiecutter)):
+  - `jupyter nbextension install --sys-prefix --symlink --overwrite --py ipycolorful`.
+  - `jupyter nbextension enable --sys-prefix --py ipycolorful`.
 - `jupyter lab`.
 
 ## Notes
@@ -38,3 +39,4 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
 - [babel-loader](https://webpack.js.org/loaders/babel-loader/).
 - [`.yarnrc` file](https://classic.yarnpkg.com/en/docs/yarnrc/).
 - [Node.js releases](https://nodejs.org/en/about/releases/).
+- [Collection of React Hooks](https://nikgraf.github.io/react-hooks/).

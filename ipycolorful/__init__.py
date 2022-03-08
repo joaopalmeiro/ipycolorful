@@ -1,4 +1,5 @@
 from ._version import __version__, version_info
+from .widget import ColorfulWidget
 
 # Source:
 # - https://github.com/jupyter-widgets/widget-cookiecutter/blob/master/%7B%7Bcookiecutter.github_project_name%7D%7D/%7B%7Bcookiecutter.python_package_name%7D%7D/__init__.py

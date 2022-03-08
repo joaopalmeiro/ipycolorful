@@ -5,6 +5,8 @@ from ._frontend import module_name, module_version
 
 # Source:
 # - https://traitlets.readthedocs.io/en/stable/trait_types.html#traitlets.Unicode
+# - https://github.com/jupyter-widgets/widget-cookiecutter/issues/90
+# - https://github.com/jupyter-widgets/widget-ts-cookiecutter/issues/109
 
 
 class ColorfulWidget(DOMWidget):

@@ -2,11 +2,12 @@ name: ipycolorful-dev
 channels:
   - conda-forge
 dependencies:
-  - python=3.7.12
-  - jupyterlab=3.2.5
-  - jupyter-packaging=0.11.1
   # https://anaconda.org/conda-forge/nodejs?version=14.18.3
   - nodejs=14.18.3
   - yarn=1.22.17
-  # https://anaconda.org/conda-forge/black-jupyter
+  - python=3.7.12
+  - jupyterlab=3.2.5
+  # https://anaconda.org/conda-forge/black-jupyter?version=22.1.0
   - black-jupyter=22.1.0
+  - twine=3.6.0
+  - build=0.7.0
