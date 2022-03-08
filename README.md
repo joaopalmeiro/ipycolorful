@@ -11,7 +11,8 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
 - [react-colorful](https://www.npmjs.com/package/react-colorful) package.
 - [widget-cookiecutter](https://github.com/jupyter-widgets/widget-cookiecutter) template.
 - [How To Add Custom Build Steps and Commands To setup.py](https://jichu4n.com/posts/how-to-add-custom-build-steps-and-commands-to-setuppy/) blog post by Chuan Ji.
-- [Creating Reactive Jupyter Widgets With Svelte](https://cabreraalex.medium.com/creating-reactive-jupyter-widgets-with-svelte-ef2fb580c05) blog post and [widget-svelte-cookiecutter](https://github.com/cabreraalex/widget-svelte-cookiecutter) template by Alex Cabrera.
+- [Creating Reactive Jupyter Widgets With Svelte](https://cabreraalex.medium.com/creating-reactive-jupyter-widgets-with-svelte-ef2fb580c05) blog post by Alex Cabrera.
+- [widget-svelte-cookiecutter](https://github.com/cabreraalex/widget-svelte-cookiecutter) template by Alex Cabrera.
 
 ## Development
 
