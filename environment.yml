@@ -7,6 +7,9 @@ dependencies:
   - yarn=1.22.17
   - python=3.7.12
   - jupyterlab=3.2.5
+  # https://anaconda.org/conda-forge/jupyter-packaging?version=0.7.9
+  # https://github.com/jupyter/jupyter-packaging/tree/0.7.9
+  - jupyter-packaging=0.7.9
   # https://anaconda.org/conda-forge/black-jupyter?version=22.1.0
   - black-jupyter=22.1.0
   - twine=3.6.0

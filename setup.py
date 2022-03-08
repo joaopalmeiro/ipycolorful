@@ -27,7 +27,6 @@ jstargets = [
 
 package_data_spec = {name: ["nbextension/**js*", "labextension/**"]}
 
-
 data_files_spec = [
     ("share/jupyter/nbextensions/ipycolorful", "ipycolorful/nbextension", "**"),
     ("share/jupyter/labextensions/ipycolorful", "ipycolorful/labextension", "**"),
@@ -39,8 +38,9 @@ cmdclass = create_cmdclass(
     "jsdeps", package_data_spec=package_data_spec, data_files_spec=data_files_spec
 )
 
+# https://github.com/jupyter/jupyter-packaging/blob/0.7.9/jupyter_packaging/setupbase.py#L365
 npm_install = combine_commands(
-    install_npm(HERE, build_cmd="build"),
+    install_npm(HERE, build_cmd="build", npm=["yarn"]),
     ensure_targets(jstargets),
 )
 
