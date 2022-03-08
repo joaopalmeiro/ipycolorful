@@ -263,5 +263,5 @@ dist
 
 # ipycolorful
 # Compiled javascript
-ipycolorful/nbextension/
+ipycolorful/nbextension/index.*
 ipycolorful/labextension/
