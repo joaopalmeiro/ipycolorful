@@ -8,6 +8,8 @@ export function useModelState(name) {
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
   const [state, setState] = useState(model.get(name));
 
+  // console.log(model);
+
   useModelEvent(
     `change:${name}`,
     (model) => {
