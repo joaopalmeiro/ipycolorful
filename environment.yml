@@ -11,3 +11,5 @@ dependencies:
   - black-jupyter=22.1.0
   - twine=3.6.0
   - build=0.7.0
+  # https://anaconda.org/conda-forge/setuptools?version=58.0.4
+  - setuptools=58.0.4
