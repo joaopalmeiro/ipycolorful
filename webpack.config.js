@@ -20,27 +20,15 @@ module.exports = [
   {
     entry: "./src/extension.js",
     output: {
-      filename: "extension.js",
-      path: path.resolve(__dirname, "ipycolorful", "nbextension"),
-      libraryTarget: "amd",
-      publicPath: "",
-    },
-    devtool: false,
-    mode: "production",
-  },
-
-  {
-    entry: "./src/index.js",
-    output: {
       filename: "index.js",
       path: path.resolve(__dirname, "ipycolorful", "nbextension"),
       libraryTarget: "amd",
       publicPath: "",
     },
-    devtool: false,
     module: {
       rules: rules,
     },
+    devtool: false,
     externals,
     resolve,
     mode: "production",
@@ -52,6 +40,7 @@ module.exports = [
       filename: "index.js",
       path: path.resolve(__dirname, "dist"),
       libraryTarget: "amd",
+      library: "ipycolorful",
       publicPath: "https://unpkg.com/ipycolorful@" + version + "/dist/",
     },
     devtool: false,

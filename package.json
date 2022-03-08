@@ -52,5 +52,10 @@
     "build:labextension": "jupyter labextension build .",
     "build:nbextension": "webpack",
     "clean": "rimraf dist/ && rimraf ipycolorful/labextension/ && rimraf ipycolorful/nbextension/"
-  }
+  },
+  "files": [
+    "lib/**/*.js",
+    "dist/*.js"
+  ],
+  "main": "lib/index.js"
 }
