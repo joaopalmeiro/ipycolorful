@@ -26,6 +26,11 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
 - `yarn run clean` + `yarn run build`.
 - `jupyter lab` or `jupyter notebook`.
 
+## Deployment
+
+- `python -m build --no-isolation .`.
+- `npm pack --dry-run`.
+
 ## Notes
 
 - [mamba](https://github.com/mamba-org/mamba):

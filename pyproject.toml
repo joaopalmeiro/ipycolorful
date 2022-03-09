@@ -8,5 +8,12 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
+# https://github.com/jupyterlab/extension-cookiecutter-ts/blob/3.0/%7B%7Bcookiecutter.python_name%7D%7D/pyproject.toml
 [tool.check-manifest]
-ignore = ["environment.yml", "demo.ipynb"]
+ignore = [
+    "environment.yml",
+    "demo.ipynb",
+    "ipycolorful/labextension/**",
+    "ipycolorful/nbextension/**",
+    ".vscode/**",
+]

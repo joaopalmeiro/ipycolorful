@@ -53,11 +53,18 @@
     "build:labextension": "jupyter labextension build .",
     "build:nbextension": "webpack",
     "build:lib": "tsc",
+    "prepack": "yarn run build:lib",
     "clean": "rimraf lib/ && rimraf dist/ && rimraf ipycolorful/labextension/ && rimraf ipycolorful/nbextension/index.*"
   },
   "files": [
     "lib/**/*.js",
     "dist/*.js"
   ],
-  "main": "lib/index.js"
+  "main": "lib/index.js",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension",
+    "widgets"
+  ]
 }
