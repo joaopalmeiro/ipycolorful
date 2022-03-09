@@ -1,6 +1,6 @@
 {
   "name": "ipycolorful",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Jupyter widget for react-colorful.",
   "homepage": "https://github.com/joaopalmeiro/ipycolorful",
   "bugs": {
