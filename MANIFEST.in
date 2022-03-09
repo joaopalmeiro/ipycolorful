@@ -3,8 +3,9 @@
 include LICENSE
 include README.md
 
-# include setup.py
+# https://github.com/bqplot/bqplot/blob/master/MANIFEST.in
 # https://github.com/jupyter-widgets/widget-ts-cookiecutter/commit/e93224b86b89e98f647f8840c4c1c1b4bca4b681
+# include setup.py
 include pyproject.toml
 
 include tsconfig.json

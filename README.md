@@ -28,8 +28,10 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
 
 ## Deployment
 
-- `python -m build --no-isolation .`.
+- `conda activate ipycolorful-dev`.
 - `npm pack --dry-run`.
+- Update the version in the `package.json` and/or `ipycolorful/_version.py` files.
+- `python -m build --no-isolation .`.
 
 ## Notes
 

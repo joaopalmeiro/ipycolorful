@@ -1,6 +1,7 @@
 import React from "react";
-import { useModelState, WidgetModelContext } from "./hooks/widget-model";
 import { HexColorPicker } from "react-colorful";
+
+import { useModelState, WidgetModelContext } from "./hooks/widget-model";
 
 function ReactWidget(props) {
   const [color, setColor] = useModelState("value");

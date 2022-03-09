@@ -1,4 +1,5 @@
 import { IJupyterWidgetRegistry } from "@jupyter-widgets/base";
+
 import { MODULE_NAME, MODULE_VERSION } from "./version";
 import * as widgetExports from "./widget";
 
