@@ -42,3 +42,19 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
 - [`.yarnrc` file](https://classic.yarnpkg.com/en/docs/yarnrc/).
 - [Node.js releases](https://nodejs.org/en/about/releases/).
 - [Collection of React Hooks](https://nikgraf.github.io/react-hooks/).
+- [check-manifest](https://github.com/mgedmin/check-manifest):
+  - `check-manifest --help`.
+  - `check-manifest -v`.
+  - `check-manifest -u -v`.
+  - Alternative: [manifix](https://github.com/vidartf/manifix).
+- [setup-cfg-fmt](https://github.com/asottile/setup-cfg-fmt).
+- [Taplo](https://taplo.tamasfe.dev/):
+  - [VS Code extension](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml).
+  - [Repo](https://github.com/tamasfe/taplo).
+  - [Online editor](https://taplo.tamasfe.dev/editor/).
+  - [Configuration](https://taplo.tamasfe.dev/configuration/#configuration-file).
+  - [Validation schemas](https://taplo.tamasfe.dev/configuration/#schemas).
+- [@jupyterlab/builder](https://github.com/jupyterlab/jupyterlab/tree/v3.2.5/builder) package:
+  - Try to match the version with that of `jupyterlab` (Python).
+  - [Configuration](https://github.com/jupyterlab/jupyterlab/blob/v3.2.5/builder/metadata_schema.json) (`package.json` file).
+  - [CLI](https://github.com/jupyterlab/jupyterlab/blob/v3.2.5/builder/src/build-labextension.ts) (and [`generateConfig()`](https://github.com/jupyterlab/jupyterlab/blob/v3.2.5/builder/src/extensionConfig.ts)).

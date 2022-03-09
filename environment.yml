@@ -13,6 +13,11 @@ dependencies:
   # https://anaconda.org/conda-forge/black-jupyter?version=22.1.0
   - black-jupyter=22.1.0
   - twine=3.6.0
-  - build=0.7.0
+  # https://anaconda.org/conda-forge/python-build?version=0.7.0
+  # https://anaconda.org/conda-forge/build?version=0.7.0
+  # https://github.com/mgedmin/check-manifest/blob/master/setup.py#L61
+  - python-build=0.7.0
   # https://anaconda.org/conda-forge/setuptools?version=58.0.4
   - setuptools=58.0.4
+  # https://anaconda.org/conda-forge/check-manifest?version=0.47
+  - check-manifest=0.47

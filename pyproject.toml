@@ -1,4 +1,12 @@
 # https://github.com/travigd/ipydraw/blob/main/pyproject.toml
 [build-system]
-requires = ["jupyter_packaging==0.7.9", "jupyterlab==3.2.5", "setuptools==58.0.4", "wheel"]
+requires = [
+    "jupyter_packaging==0.7.9",
+    "jupyterlab==3.2.5",
+    "setuptools==58.0.4",
+    "wheel",
+]
 build-backend = "setuptools.build_meta"
+
+[tool.check-manifest]
+ignore = ["environment.yml", "demo.ipynb"]
