@@ -53,7 +53,8 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
   - `check-manifest -u -v`.
   - [`check-manifest` became super slow](https://github.com/mgedmin/check-manifest/issues/141) (open) issue.
   - Alternative: [manifix](https://github.com/vidartf/manifix).
-- [setup-cfg-fmt](https://github.com/asottile/setup-cfg-fmt).
+- [setup-cfg-fmt](https://github.com/asottile/setup-cfg-fmt):
+  - `setup-cfg-fmt setup.cfg`.
 - [Taplo](https://taplo.tamasfe.dev/):
   - [VS Code extension](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml).
   - [Repo](https://github.com/tamasfe/taplo).
