@@ -5,11 +5,7 @@ import { HexColorPicker } from "react-colorful";
 function ReactWidget(props) {
   const [color, setColor] = useModelState("value");
 
-  return (
-    <div style={{ padding: "1rem" }}>
-      <HexColorPicker color={color} onChange={setColor} />
-    </div>
-  );
+  return <HexColorPicker color={color} onChange={setColor} />;
 }
 
 function withModelContext(Component) {

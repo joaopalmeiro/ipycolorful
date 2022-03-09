@@ -8,8 +8,12 @@ const version = require("./package.json").version;
 // - https://webpack.js.org/configuration/resolve/#resolveextensions
 // - https://github.com/bqplot/bqplot/blob/master/js/webpack.lab.config.js
 // - https://stackoverflow.com/a/42672703
+// - https://github.com/jupyter-widgets/widget-ts-cookiecutter/issues/29
 
-const rules = [{ test: /\.jsx$/, loader: "babel-loader" }];
+const rules = [
+  { test: /\.jsx$/, loader: "babel-loader" },
+  { test: /\.css$/, use: ["style-loader", "css-loader"] },
+];
 
 // Packages that shouldn't be bundled but loaded at runtime.
 const externals = ["@jupyter-widgets/base"];
@@ -36,6 +40,15 @@ module.exports = [
     mode: "production",
   },
 
+  /**
+   * Embeddable ipycolorful bundle.
+   *
+   * This bundle is almost identical to the notebook extension bundle. The only
+   * difference is in the configuration of the public path for the static assets.
+   *
+   * The target bundle is always `dist/index.js`. It is the path required by the
+   * custom widget embedder.
+   */
   {
     entry: "./src/index.js",
     output: {

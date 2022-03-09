@@ -27,7 +27,9 @@
     "@babel/preset-react": "7.14.5",
     "@jupyterlab/builder": "3.2.5",
     "babel-loader": "8.2.2",
+    "css-loader": "5.2.6",
     "rimraf": "3.0.2",
+    "style-loader": "2.0.0",
     "typescript": "4.3.5",
     "webpack": "5.46.0",
     "webpack-cli": "4.7.2"
@@ -58,7 +60,8 @@
   },
   "files": [
     "lib/**/*.js",
-    "dist/*.js"
+    "dist/*.js",
+    "css/*.css"
   ],
   "main": "lib/index.js",
   "keywords": [

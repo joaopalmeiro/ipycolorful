@@ -16,4 +16,6 @@ ignore = [
     "ipycolorful/labextension/**",
     "ipycolorful/nbextension/**",
     ".vscode/**",
+    # https://github.com/jupyter-widgets/widget-ts-cookiecutter/commit/e93224b86b89e98f647f8840c4c1c1b4bca4b681
+    "setup.py",
 ]

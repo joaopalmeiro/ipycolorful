@@ -38,7 +38,7 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
   - [Documentation](https://mamba.readthedocs.io/en/latest/).
   - `conda` should be used for activation and deactivation.
   - [Reimplement: mamba env create -f env.yml](https://github.com/mamba-org/mamba/issues/633) (open) issue.
-  - `mamba env remove -n ipycolorful-dev` ([source](https://www.imranabdullah.com/2021-08-21/Conda-and-Mamba-Commands-for-Managing-Virtual-Environments)).
+  - `conda deactivate` + `mamba env remove -n ipycolorful-dev` ([source](https://www.imranabdullah.com/2021-08-21/Conda-and-Mamba-Commands-for-Managing-Virtual-Environments)).
 - [conda-forge](https://anaconda.org/conda-forge).
 - [conda-lock](https://github.com/conda-incubator/conda-lock).
 - [ipycanvas](https://github.com/martinRenou/ipycanvas).
@@ -51,6 +51,7 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
   - `check-manifest --help`.
   - `check-manifest -v`.
   - `check-manifest -u -v`.
+  - [`check-manifest` became super slow](https://github.com/mgedmin/check-manifest/issues/141) (open) issue.
   - Alternative: [manifix](https://github.com/vidartf/manifix).
 - [setup-cfg-fmt](https://github.com/asottile/setup-cfg-fmt).
 - [Taplo](https://taplo.tamasfe.dev/):
@@ -63,3 +64,4 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
   - Try to match the version with that of `jupyterlab` (Python).
   - [Configuration](https://github.com/jupyterlab/jupyterlab/blob/v3.2.5/builder/metadata_schema.json) (`package.json` file).
   - [CLI](https://github.com/jupyterlab/jupyterlab/blob/v3.2.5/builder/src/build-labextension.ts) (and [`generateConfig()`](https://github.com/jupyterlab/jupyterlab/blob/v3.2.5/builder/src/extensionConfig.ts)).
+- [gitignore_parser](https://github.com/mherrmann/gitignore_parser) package.
