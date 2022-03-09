@@ -5,6 +5,8 @@ include README.md
 
 # https://github.com/bqplot/bqplot/blob/master/MANIFEST.in
 # https://github.com/jupyter-widgets/widget-ts-cookiecutter/commit/e93224b86b89e98f647f8840c4c1c1b4bca4b681
+# https://github.com/jupyter-widgets/widget-ts-cookiecutter/issues/112
+# https://github.com/travigd/ipydraw/blob/main/.github/workflows/publish.yml
 # include setup.py
 include pyproject.toml
 
