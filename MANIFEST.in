@@ -18,3 +18,6 @@ graft css
 # https://github.com/jupyterlab/extension-cookiecutter-ts/blob/3.0/%7B%7Bcookiecutter.python_name%7D%7D/MANIFEST.in
 graft ipycolorful/nbextension
 graft ipycolorful/labextension
+
+# __pycache__
+global-exclude *.pyc

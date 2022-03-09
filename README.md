@@ -31,7 +31,7 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
 ## Deployment
 
 - `conda activate ipycolorful-dev`.
-- Update the version in the `package.json` and/or `ipycolorful/_version.py` files.
+- Update the version in the `package.json`, `ipycolorful/_version.py`, and/or `ipycolorful/_frontend.py` files.
 - `npm pack --dry-run`.
 - `yarn login`.
 - `yarn publish`.
