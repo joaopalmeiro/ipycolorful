@@ -36,6 +36,7 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
 - `npm pack --dry-run`.
 - `yarn login`.
 - `yarn publish`.
+- `yarn run clean`.
 - `python -m build --no-isolation .`.
 - After removing the old files:
   - `twine check dist/ipycolorful*` (vs. `twine check dist/*`).
