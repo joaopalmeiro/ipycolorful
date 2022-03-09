@@ -4,6 +4,8 @@ import ReactDOM from "react-dom";
 import ReactWidget from "./ReactWidget";
 import { MODULE_NAME, MODULE_VERSION } from "./version";
 
+import "../css/widget.css";
+
 // Source:
 // - https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Custom.html#Front-end-(TypeScript)
 

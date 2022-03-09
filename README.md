@@ -66,3 +66,4 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
   - [Configuration](https://github.com/jupyterlab/jupyterlab/blob/v3.2.5/builder/metadata_schema.json) (`package.json` file).
   - [CLI](https://github.com/jupyterlab/jupyterlab/blob/v3.2.5/builder/src/build-labextension.ts) (and [`generateConfig()`](https://github.com/jupyterlab/jupyterlab/blob/v3.2.5/builder/src/extensionConfig.ts)).
 - [gitignore_parser](https://github.com/mherrmann/gitignore_parser) package.
+- [Rendering Interactive Widgets on nbviewer](https://ipywidgets.readthedocs.io/en/latest/embedding.html#rendering-interactive-widgets-on-nbviewer).
