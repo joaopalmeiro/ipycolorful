@@ -1,5 +1,7 @@
 # ipycolorful
 
+> [PyPI](https://pypi.org/project/ipycolorful/) + [npm](https://www.npmjs.com/package/ipycolorful)
+
 A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorful).
 
 ## References
@@ -29,9 +31,17 @@ A Jupyter widget for [react-colorful](https://www.npmjs.com/package/react-colorf
 ## Deployment
 
 - `conda activate ipycolorful-dev`.
-- `npm pack --dry-run`.
 - Update the version in the `package.json` and/or `ipycolorful/_version.py` files.
+- `npm pack --dry-run`.
+- `yarn login`.
+- `yarn publish`.
 - `python -m build --no-isolation .`.
+- After removing the old files:
+  - `twine check dist/ipycolorful*` (vs. `twine check dist/*`).
+  - `twine upload dist/ipycolorful*` (vs. `twine upload dist/*`).
+- `git tag 0.1.0` (update the version).
+- `git tag`.
+- GitHub Desktop + `git push --tags`.
 
 ## Notes
 

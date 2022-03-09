@@ -1,6 +1,6 @@
 {
   "name": "ipycolorful",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A Jupyter widget for react-colorful.",
   "homepage": "https://github.com/joaopalmeiro/ipycolorful",
   "bugs": {
@@ -55,7 +55,7 @@
     "build:labextension": "jupyter labextension build .",
     "build:nbextension": "webpack",
     "build:lib": "tsc",
-    "prepack": "yarn run build:lib",
+    "prepack": "yarn run build",
     "clean": "rimraf lib/ && rimraf dist/ && rimraf ipycolorful/labextension/ && rimraf ipycolorful/nbextension/index.*"
   },
   "files": [
